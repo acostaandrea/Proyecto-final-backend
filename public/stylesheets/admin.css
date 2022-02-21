@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+}
+
+main{
+    margin-top: 50px;
+}
+
+header h1{
+    position: static;
+}
+
+button{
+    margin-bottom: 10px;
+}

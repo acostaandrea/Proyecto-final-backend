@@ -1,0 +1,23 @@
+<div class="container" style="margin-top: 100px; width:300px">
+    <div class="row">
+        <form action="/admin/login" method="post">
+
+            <div class="form-floating">
+                <input type="text" class="form-control" id="inputUser" placeholder="Usuario" name="usuario">
+                <label for="floatingInput">Usuario</label>
+
+            </div>
+            <div class="form-floating mb-3" style="margin-top: 10px;">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña"
+                    name="password">
+                <label for="floatingPassword">Contraseña</label>
+
+            </div>
+
+            <button type="submit" class="btn btn-outline-primary">Ingresar</button>
+        </form>
+        {{#if error}}
+        <P>Usuario o clave incorrecto</P>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,157 @@
+/* font-family: 'Roboto', sans-serif; */
+/*Paleta de colores
+#082032 rgb(8, 32, 50)
+#2C394B
+#334756
+#FF4C29-
+rgb(8, 32, 50)
+rgb(51, 71, 86)
+rgb(240, 165, 0)
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+        /* background: url("../img/fondo2.jpg") no-repeat scroll center top #0000001e; */
+    	   
+}
+
+header{
+    position: sticky;
+    top: 0; 
+    height: 90px;
+    background-color: rgba(8, 32, 50, 0.849);
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+
+}
+
+header .logo{
+    /* display: inline-block; */
+    margin-left: 1.5em;
+    
+        /* width: 20%; */
+    
+}
+
+header .logo h1{
+    color: white;
+    font-weight: 100;
+    font-size: 2em;
+    margin-left: 0;
+    
+        
+}
+
+     
+
+
+/* main .homeimg img{
+    margin-top: 1.5em;
+    width: 100%;
+    
+    
+} */
+
+main .portada{
+    background: url("../img/portada.jpg");
+    height: 80vh;
+    text-align: right;
+    font-size: 1.7em;
+    
+}
+
+main .portada p{
+    width: 40vw;
+    float: right;
+    margin-right: 2em;
+    text-shadow: rgba(0, 7, 12, 0.863);
+    font-style: italic;
+    margin-top: 2em;
+
+}
+
+main .tarjetas{
+    /* box-sizing: border-box; */
+    /* display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    height: 300px;
+    gap: 3em;
+    padding-top: 1em;
+   padding: 1em;
+   justify-items: stretch;*/
+    cursor: pointer; 
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    margin-top: 1.5em;
+    
+
+}
+main .tarjetas .tarjeta1{
+    background: url(../img/casa.jpg);
+    width: 30%;
+    object-fit: cover;
+    
+}
+
+main .tarjetas .tarjeta2{
+        background: url(../img/dique.jpg);
+        width: 30%;
+      
+    
+}
+main .tarjetas .tarjeta3{
+    background: url(../img/barriochico.jpg);
+    width: 30%;
+    object-fit:scale-down;
+    
+
+}
+main .tarjetas h2{
+    padding-left: 1em;
+    padding-top: 1em;
+    
+}
+
+main .tarjetas .anim{
+     /* opacity: 0.7; */
+     filter: grayscale(0.7);
+}
+main .tarjetas .anim:hover{
+    animation-name: grayscale;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grayscale{
+    100%{
+        filter: grayscale(0);
+    }
+}
+
+footer{
+    background-color: rgba(8, 32, 50, 0.534);
+    clear: both;
+    color: rgb(255, 255, 255);
+    padding: 0.5em 0;
+    margin-top: 2em;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 2em;
+    
+    
+}
